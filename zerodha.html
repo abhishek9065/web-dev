@@ -1,0 +1,71 @@
+<!--
+        This HTML file creates a simple landing page for Zerodha, an online stock trading platform.
+        Key features of the code:
+        - Sets up the document with proper meta tags for character encoding and viewport settings.
+        - Adds a favicon using the Zerodha logo.
+        - Implements a navigation bar with the Zerodha logo and menu items (Signup, About, Product, Pricing, Support) using flexbox for layout and styling.
+        - Displays a central landing image below the navigation bar.
+        - Shows a prominent headline ("Invest in Everything") and a subheading describing the platform's offerings.
+        - Includes a styled "Sign up now" call-to-action button centered on the page.
+        - Uses inline CSS for layout, spacing, colors, and typography to achieve a clean, modern look.
+-->
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8" />
+                <meta name ="viewport" content="width=device-width, initial-scale=1.0" />
+                <!--Adding favicon of zerodha-->
+                <link
+                rel="shortcut icon"
+                href="logo.svg"
+                type="image/x-icon"
+                />
+                <title> Zerodha - Online Stock Trading </title>
+        </head>
+        <body style = "font-family:sans-serif">
+        <div
+                style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-left: 100px;
+                padding-right: 100px;
+                box-shadow: 2px 1px 2px #eee;
+                "
+        >
+                <img src = "logo.svg"
+                alt = "Zerodha Logo"
+                width = "120"
+                height = "20"
+                style = "cursor: pointer"
+                />
+                <div style="display: flex; align-items: center">
+                        <div style="padding: 20px; color: #666; cursor: pointer">Signup</div>
+                        <div style="padding: 20px; color: #666; cursor: pointer">About</div>
+                        <div style="padding: 20px; color: #666; cursor: pointer">Product</div>
+                        <div style="padding: 20px; color: #666; cursor: pointer">Pricing</div>
+                        <div style="padding: 20px; color: #666; cursor: pointer">Support</div>
+                </div>
+        </div>
+
+        <div style="display: flex; justify-content: center; padding-top: 50px">
+                <img src = "landing.png"
+                alt = "Zerodha Landing"
+                width = "50%"
+                height = "auto"
+                style = "max-width: 1200px"
+                />
+        </div>
+
+        <h1 style="padding-top: 30px; display: flex; justify-content: center; font-size: 40px; font-weight: 500;">
+                Invest in Everything
+        </h1>
+        <h4 style= "text-align: center; font-weight: 500; font-size: 20px;">
+                Online platform to invest in stocks, derivatives, mutual fund, ETFs, bonds, and more.
+        </h4>
+        <div style = "display: flex; justify-content: center; margin-top: 25px; margin-bottom: 30px;">
+                <span style= "background-color: #387ed1; padding: 10px 30px; border-radius: 3px; color: white; font-weight: 500; font-size: 20px; cursor: pointer;"> Sign up now</span>
+        </div>
+
+        </body>
+</html>
